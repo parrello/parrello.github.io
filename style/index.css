@@ -2,6 +2,7 @@ html,
 body {
   font-size: 15px;
   height: 100%;
+  margin: 0;
 }
 
 body {
@@ -16,12 +17,31 @@ body {
 
 img {
 	margin: auto;
-	max-width: 100%;
-	height: auto;
 }
 
 .container {
 	margin: 40px auto 40px auto;
 	width: 600px;
 	text-align: center;
+}
+
+.wip {
+	display: inline-block;
+	margin-top: 10px;
+}
+.wip-display {
+	max-width: 80%;
+	height: auto;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+	.wip-display {
+		max-width: 50%;
+	}
 }
