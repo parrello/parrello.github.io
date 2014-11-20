@@ -1,0 +1,19 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Nicola Parrello
+N:Parrello;Nicola;;;
+EMAIL;TYPE=INTERNET:parrello.nicola@gmail.com
+TEL;TYPE=CELL:+39 3473883418
+TEL;TYPE=WORK:+36 302204493
+ADR;TYPE=HOME:;;via Petrarca 50;Pergine Valsugana;(Trento);38057;Italy
+ORG:EIT ICT Labs Master School
+TITLE:Service Design and Engineering
+item1.URL:parrello.me
+item1.X-ABLabel:_$!<HomePage>!$_
+item2.URL:it.linkedin.com/pub/nicola-parrello/97/b07/b50/
+item2.X-ABLabel:LinkedIn
+item3.URL:soundcloud.com/nikolajp
+item3.X-ABLabel:Soundcloud
+item4.URL:couchsurfing.org/people/alocinparrello/
+item4.X-ABLabel:Couchsurfing
+END:VCARD
