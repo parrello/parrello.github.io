@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+	<script type="text/javascript" src="js/thesis.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/thesis.css">
+</head>
+<div id="answer">
+	NO
+</div>
+<body>
+	<script type="text/javascript">
+    function updateThesisDeadline(stillTime) {
+
+      var answer;
+      if (stillTime)
+        answer = ThesisDeadline.yes();
+      else
+        answer = ThesisDeadline.no();
+
+      var elem = document.getElementById('answer');
+      elem.innerHTML = answer;
+      elem.setAttribute("title", answer);
+    }
+
+    updateThesisDeadline(ThesisDeadline.stillTime());
+  </script>
+</body>
