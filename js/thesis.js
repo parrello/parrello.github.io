@@ -4,7 +4,7 @@ var ThesisDeadline = {
   time: {
     year: 2015,
     month: 5,
-    date: 23
+    date: 29
   },
 
   stillTime: function(date) {
