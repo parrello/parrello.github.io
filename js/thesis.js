@@ -9,14 +9,7 @@ var ThesisDeadline = {
 
   stillTime: function(date) {
     if (!date) date = new Date();
-    return !(date.getYear() == ThesisDeadline.time.year && date.getMonth() == ThesisDeadline.time.month && date.getDate() == ThesisDeadline.time.date);
-  },
-
-  answer: function(countryCode, date) {
-    if (ThesisDeadline.isIt(date))
-      return "NO"
-    else
-      return "YES";
+    return !(date.getYear() >= ThesisDeadline.time.year || (date.getMonth() >= ThesisDeadline.time.month && date.getDate() >= ThesisDeadline.time.date));
   },
 
   yes: function() {
