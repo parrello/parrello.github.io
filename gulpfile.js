@@ -1,7 +1,10 @@
 const gulp = require("gulp");
+const autoPrefixer = require("gulp-autoprefixer");
 const connect = require("gulp-connect");
+const minify = require("gulp-cssnano");
 const open = require("gulp-open");
 const os = require("os");
+const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 
 let browser;
@@ -37,6 +40,10 @@ gulp.task("fonts", () => {
 gulp.task("sass", () => {
     return gulp.src("./src/scss/main.scss")
         .pipe(sass().on("error", sass.logError))
+        .pipe(autoPrefixer())
+        .pipe(gulp.dest("./dist/assets/css"))
+        .pipe(minify())
+        .pipe(rename({ suffix: ".min" }))
         .pipe(gulp.dest("./dist/assets/css"))
         .pipe(connect.reload());
 });
