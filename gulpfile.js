@@ -41,7 +41,6 @@ gulp.task("sass", () => {
     return gulp.src("./src/scss/main.scss")
         .pipe(sass().on("error", sass.logError))
         .pipe(autoPrefixer())
-        .pipe(gulp.dest("./dist/assets/css"))
         .pipe(minify())
         .pipe(rename({ suffix: ".min" }))
         .pipe(gulp.dest("./dist/assets/css"))
