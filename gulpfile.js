@@ -53,12 +53,19 @@ gulp.task("html", () => {
         .pipe(connect.reload());
 });
 
+gulp.task("deploy-resources", () => {
+    return gulp.src("./src/CNAME")
+        .pipe(gulp.dest("./dist"))
+        .pipe(connect.reload());
+});
+
 gulp.task("watch", () => {
     gulp.watch(["./src/fonts/*.*"], gulp.task("fonts"));
     gulp.watch(["./src/**/*.scss"], gulp.task("sass"));
     gulp.watch(["./src/*.txt"], gulp.task("text"));
     gulp.watch(["./src/*.png", "./src/*.ico"], gulp.task("icons"));
     gulp.watch(["./src/**/*.html"], gulp.task("html"));
+    gulp.watch(["./src/CNAME"], gulp.task("deploy-resources"));
 });
 
 gulp.task("serve", () => {
@@ -76,7 +83,7 @@ gulp.task("serve", () => {
     return gulp.src(__filename).pipe(open(options));
 });
 
-gulp.task("default", gulp.series("fonts", "sass", "text", "icons", "html", "serve", "watch", (done) => {
+gulp.task("default", gulp.series("fonts", "sass", "text", "icons", "html", "deploy-resources", "serve", "watch", (done) => {
     done();
 }));
 
