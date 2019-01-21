@@ -1,0 +1,11 @@
+# TEAM
+
+    Nicola Parrello -- owner/developer
+
+# THANKS
+
+    My mom
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, SASS, Gulp
