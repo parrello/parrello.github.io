@@ -1,0 +1,26 @@
+{
+    "name": "parrello.me",
+    "description": "Just the source code of my simple website.",
+    "homepage": "https://parrello.me/",
+    "version": "1.0.0",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/parrello/parrello.github.io"
+    },
+    "devDependencies": {
+        "eslint": "^5.12.1",
+        "gulp": "4.0.0",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-connect": "^5.7.0",
+        "gulp-cssnano": "^2.1.3",
+        "gulp-open": "^3.0.1",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "4.0.2",
+        "normalize.css": "8.0.0",
+        "run-sequence": "2.2.1"
+    },
+    "dependencies": {
+
+    }
+}

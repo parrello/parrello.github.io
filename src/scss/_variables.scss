@@ -1,0 +1,55 @@
+/* Size */
+$max-width-column: 500px;
+$max-width-screen-phone: 43.75em;
+$max-width-screen-tablet: 56.25rem;
+
+/* Color */
+$color-black: #000000;
+$color-white: #FFFFFF;
+
+/* Text */
+$font-size-base: 16px;
+
+$font-size-body-mobile: 1rem;
+$line-height-body-mobile: 1.25;
+
+$font-size-body-tablet: $font-size-body-mobile;
+$line-height-body-tablet: 1.25;
+
+$font-size-h1-mobile: 2rem;
+$line-height-h1-mobile: 1.25;
+
+$font-size-h1-tablet: 2.25rem;
+$line-height-h1-tablet: 1.125;
+
+$font-size-h1-desktop: 3rem;
+$line-height-h1-desktop: 1.05;
+
+$font-size-h2-mobile: 1.625rem;
+$line-height-h2-mobile: 1.15384615;
+
+$font-size-h2-tablet: 2rem;
+$line-height-h2-tablet: 1.25;
+
+$font-size-h2-desktop: 2.25rem;
+$line-height-h2-desktop: 1.25;
+
+$font-size-h3-mobile: 1.375rem;
+$line-height-h3-mobile: 1.13636364;
+
+$font-size-h3-tablet: 1.5rem;
+$line-height-h3-tablet: 1.25;
+
+$font-size-h3-desktop: 1.75rem;
+$line-height-h3-desktop: 1.25;
+
+$font-size-adjust-default: 0.5;
+$font-size-footer: 0.8rem;
+
+$letter-spacing-title-mobile: 0.5rem;
+$letter-spacing-title-tablet: 1.25rem;
+
+/* Spacing */
+$spacer-extra-small: calc(#{$font-size-base}/3);
+$spacer-small: 1rem;
+$spacer-medium: 2rem;
